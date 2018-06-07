@@ -1,0 +1,117 @@
+<html>
+<title>search</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Roboto Slab", sans-serif;
+}
+.image:hover > .overlay {
+    opacity: .9;
+    background-color: black;
+    position: absolute;
+    left: 0; top: 0; height: 256px; width: 256px;
+}
+.menu {
+    display: none;
+}
+.banner{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: black;
+  padding: 14px 28px;
+  height: 50px;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+</style>
+<body>
+
+<!-- Header with image -->
+<header class="banner">
+</header>
+<!-- background color -->
+<div class="w3-sand w3-grayscale w3-large">
+<!-- search -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="w3-container" id="search" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <form class="example" action="searchresult.php" method = "post">
+      <h1>Search User</h1>
+      <p>Please enter names, email or phone numbers to search.</p>
+      <hr>
+      <input type="text" placeholder="Search.." name="SEARCH">
+      <button type="submit"><i class="fa fa-search"></i></button>
+
+    </form>
+  <div>
+</div>
+<div class="w3-container" id="back" style="padding-bottom:32px;">
+  <form action = "index.php#secure">
+  <button type="submit" class="cancelbtn">Go back</button>
+  </form>
+</div>
+  <p>Here are the users in database:</p>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>first name</th>
+      <th>last name</th>
+      <th>email</th>
+      <th>address</th>
+      <th>home phone</th>
+      <th>cellphone</th>
+    </tr>
+
+  <tr><th>1</th><th>John</th><th>Cina</th><th>123@gmail.com</th><th>Happy Road</th><th>12345</th><th>12345</th></tr><tr><th>2</th><th>ha</th><th>ha</th><th>ha@gmail.com</th><th>123</th><th>123</th><th>123</th></tr><tr><th>3</th><th>Jane</th><th>Cheng</th><th>jane@gmail.com</th><th>Gogogo Road</th><th>456544</th><th>1234532</th></tr><tr><th>4</th><th>Brad</th><th>Pitt</th><th>Brad@gamil.com</th><th>One Road</th><th>789875</th><th>2342342</th></tr><tr><th>5</th><th>Carrie</th><th>Chen</th><th>carrie@sjsu.edu</th><th>213 Avenue</th><th>4564332</th><th>3423425</th></tr><tr><th>6</th><th>Wendy</th><th>Yu</th><th>wendy@sjsu.edu</th><th>123 Road</th><th>12321313</th><th>12313123</th></tr><tr><th>7</th><th>Sandy</th><th>Chiu</th><th>sandy@gmail.com</th><th>Go Road</th><th>1231313</th><th>123123123</th></tr><tr><th>8</th><th>Can</th><th>Lin</th><th>can123@gmail.com</th><th>Apple Road</th><th>1324124</th><th>12341431</th></tr><tr><th>9</th><th>Sam</th><th>Wang</th><th>sam@gmail.com</th><th>Banan Road</th><th>2141234124</th><th>12341234</th></tr><tr><th>10</th><th>Money</th><th>Chen</th><th>money@sjsu.edu</th><th>Money Road</th><th>34563636</th><th>3456346</th></tr><tr><th>11</th><th>Tracy</th><th>Huang</th><th>tracy22@gmail.com</th><th>1 Washington Sq</th><th>123123123</th><th>34535345</th></tr><tr><th>12</th><th>Sherry</th><th>Wu</th><th>sherry.wu@sjsu.edu</th><th>1 Washington Sq</th><th>425235</th><th>2435235</th></tr><tr><th>13</th><th>Amy</th><th>July</th><th>amy.july@sjsu.edu</th><th>Two Road</th><th>34453454</th><th>3455345</th></tr><tr><th>14</th><th>Ruby</th><th>Tu</th><th>ruby@yahoo.com</th><th>Patrick Road</th><th>4254325425</th><th>4325352354</th></tr><tr><th>15</th><th>Allison</th><th>Cheng</th><th>allison@gmail.com</th><th>Lombard Street</th><th>2342424232</th><th>2435235444</th></tr><tr><th>16</th><th>Clair</th><th>Wu</th><th>clair@sjsu.edu</th><th>Malone Road</th><th>1234124123</th><th>2134234343</th></tr><tr><th>17</th><th>Penny</th><th>Lee</th><th>penny@yahoo.com</th><th>Tully Road</th><th>1234124321</th><th>3453643656</th></tr><tr><th>18</th><th>Taylor</th><th>Swift</th><th>taylor.swift@sjsu.edu</th><th>Curtner Avenue</th><th>3124431341</th><th>1324243243</th></tr><tr><th>19</th><th>Lady</th><th>GaGa</th><th>lady.gaga@sjsu.edu</th><th>Tully Road</th><th>1341234343</th><th>1234234234</th></tr><tr><th>20</th><th>Katy</th><th>Perry</th><th>katy.perry@sjsu.edu</th><th>Allen Ave</th><th>1234234344</th><th>2342344323</th></tr></table>

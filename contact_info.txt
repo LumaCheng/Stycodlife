@@ -1,0 +1,4 @@
+<p style="color:#000;text-align:center">Company Name:<p style="color:#757575;text-align:center"> StyCodlife<br></p>
+<p style="color:#000;text-align:center">Address: <p style="color:#757575;text-align:center">1 Washington Sq, San Jose, CA 95192<br></p>
+<p style="color:#000;text-align:center">Email: <p style="color:#757575;text-align:center"> juyun.cheng@sjsu.edu<br></p>
+<p style="color:#000;text-align:center">Name: <p style="color:#757575;text-align:center"> Ju-Yun Cheng<br></p>
